@@ -1,0 +1,5 @@
+<h2>
+  Cocktail Name: <%= @cocktail.name %>
+</h2>
+<%= link_to 'View Doses', cocktail_doses_path(@cocktail), class: 'btn btn-info' %>
+<%= link_to 'Cocktail Home', cocktails_path, class: 'btn btn-primary' %>
