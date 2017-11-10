@@ -7,6 +7,8 @@ git_source(:github) do |repo_name|
 end
 
 ## Back-End Gems
+gem 'cloudinary'
+gem 'figaro'
 gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
@@ -16,7 +18,6 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 
 ## Front-End Setup Gems
-gem 'figaro'
 gem 'jquery-rails'
 gem "bootstrap-sass"
 gem "font-awesome-sass"

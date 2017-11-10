@@ -1,7 +1,7 @@
 <h2>
   Cocktail Name: <%= @cocktail.name %>
 </h2>
-<%= link_to 'Cocktail Home', cocktails_path, class: 'btn btn-primary' %>
+
 <ul>
   <% @cocktail.doses.all.each do |dose| %>
   <li>
