@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 
 ## Front-End Setup Gems
+gem 'carrierwave', '~> 0.11.2'
 gem 'jquery-rails'
 gem "bootstrap-sass"
 gem "font-awesome-sass"

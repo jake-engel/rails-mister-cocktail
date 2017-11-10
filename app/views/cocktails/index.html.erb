@@ -10,5 +10,6 @@
       </strong>
       <%= link_to cocktail.name, cocktail_path(cocktail)  %>
     </li>
+      <%= cl_image_tag cocktail.photo, height: 100, width: 100, crop: :fill, crop: :thumb, gravity: :face %>
   <% end %>
 </ul>

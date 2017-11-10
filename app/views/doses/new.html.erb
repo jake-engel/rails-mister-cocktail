@@ -1,4 +1,4 @@
-<h2>New Dose for pe </h2>
+<h2>New Dose for <%= @cocktail.name %> </h2>
 <%= link_to 'Homepage', cocktails_path, class: "btn btn-primary" %>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
