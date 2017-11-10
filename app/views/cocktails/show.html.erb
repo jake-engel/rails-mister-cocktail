@@ -1,7 +1,5 @@
 <% if @cocktail.photo %>
 <%= cl_image_tag @cocktail.photo.url(:standard) %>
-<% else %>
-<%= cl_image_tag("yszyapaudcrkrpxfxttr.jpg") %>
 <% end %>
 <h2>
   Cocktail Name: <%= @cocktail.name %>
