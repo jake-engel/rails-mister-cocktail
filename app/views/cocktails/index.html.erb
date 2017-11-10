@@ -4,12 +4,16 @@
 
 <ul>
   <% @cocktails.each do |cocktail| %>
-    <li>
-      <strong>
-        Cocktail:
-      </strong>
-      <%= link_to cocktail.name, cocktail_path(cocktail)  %>
-    </li>
-      <%= cl_image_tag cocktail.photo, height: 100, width: 100, crop: :fill, crop: :thumb, gravity: :face %>
+  <li>
+    <strong>
+      Cocktail:
+    </strong>
+    <%= link_to cocktail.name, cocktail_path(cocktail)  %>
+  </li>
+  <% if cocktail.photo %>
+    <%= cl_image_tag cocktail.photo.url(:bright_face) %>
+  <% else %>
+    <%= cl_image_tag("yszyapaudcrkrpxfxttr.jpg") %>
+  <% end %>
   <% end %>
 </ul>
