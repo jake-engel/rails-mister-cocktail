@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 
 ## Front-End Setup Gems
+gem 'figaro'
 gem 'jquery-rails'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
